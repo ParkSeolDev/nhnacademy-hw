@@ -52,7 +52,7 @@ public class TestWorld {
         }
         
        try {
-            GameObject ball = (GameObject) gameObjectFactory.createBall(RANDOM.nextInt(100, 700), RANDOM.nextInt(600, 620),
+            GameObject ball = (GameObject) gameObjectFactory.createBall(RANDOM.nextInt(600) + 100, RANDOM.nextInt(20) + 600,
                     MIN_RADIUS);
             
             int dx = MIN_DELTA;

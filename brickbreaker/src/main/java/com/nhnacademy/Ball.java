@@ -25,7 +25,7 @@ public class Ball extends PaintableObect {
 
         this.region = new Rectangle(x - radius, y - radius, 2 * radius, 2 * radius);
         gameObject = new PaintableObect(x - radius, y - radius, 2 * radius, 2 * radius);
-        setColor(COLOR_MAP.get(RANDOM.nextInt(0, 3)));
+        setColor(COLOR_MAP.get(RANDOM.nextInt(3)));
         logger.trace("Ball created : {}, {}", x, y);
     }
 

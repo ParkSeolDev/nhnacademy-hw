@@ -76,8 +76,8 @@ public class World extends JPanel implements MouseMotionListener {
     public void createItem() {
         if (!itemOn) {
             setItemOn();
-            Upgradable item = factory.createItem(200, 200, 100, 50);
-            gameObjects.add((GameObject) item);
+            GameObject item = (GameObject) factory.createItem(200, 200, 100, 50);
+            gameObjects.add(item);
         }
     }
 
