@@ -13,3 +13,5 @@ NHN Academy 과제
 <br/>
 20240319 recorder
 <br/>
+20240321 bingo
+<br/>
