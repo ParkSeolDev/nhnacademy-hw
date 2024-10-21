@@ -21,24 +21,6 @@ public class Player {
         return playerNum;
     }
 
-    public void removeCard(Card card) {
-        hand.cards().remove(card);
-    }
-
-    public Card playCard(CardUnit topCardSymbol, CardUnit topCardShape) {
-        for (Card card : hand.cards()) {
-            if (card.canPlayOn(topCardSymbol, topCardShape)) {
-                removeCard(card);
-                return card;
-            }
-        }
-        return null;
-    }
-
-    public boolean hasWon() {
-        return hand.cards().isEmpty();
-    }
-
     @Override
     public String toString() {
         return playerNum + " : " + hand.toString();

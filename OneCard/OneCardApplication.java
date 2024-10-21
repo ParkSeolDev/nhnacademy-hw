@@ -41,7 +41,7 @@ public final class OneCardApplication {
         while (true) {
             Player currentPlayer = players.player(currentPlayerIndex);
 
-            tempCard = currentPlayer.playCard(topCard.cardSymbol(), topCard.cardShape());
+            tempCard = currentPlayer.hand().playCard(topCard.cardSymbol(), topCard.cardShape());
 
             if (tempCard != null) {
                 topCard = tempCard;
@@ -49,7 +49,7 @@ public final class OneCardApplication {
 
                 currentPlayerIndex = handleSpecialCards((CardSymbol)tempCard.card().get(0), currentPlayerIndex, players);
 
-                if (currentPlayer.hasWon()) {
+                if (currentPlayer.hand().hasWon()) {
                     System.out.println(currentPlayer.playerNum() + " WIN!");
                     break;
                 }

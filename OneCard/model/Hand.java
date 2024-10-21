@@ -31,6 +31,24 @@ public class Hand {
         return cardsInHand;
     }
 
+    public void removeCard(Card card) {
+        cards().remove(card);
+    }
+
+    public Card playCard(CardUnit topCardSymbol, CardUnit topCardShape) {
+        for (Card card : cards()) {
+            if (card.canPlayOn(topCardSymbol, topCardShape)) {
+                removeCard(card);
+                return card;
+            }
+        }
+        return null;
+    }
+
+    public boolean hasWon() {
+        return cards().isEmpty();
+    }
+
     @Override
     public String toString() {
         return cardsInHand.stream()
