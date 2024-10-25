@@ -14,7 +14,13 @@ NHN Academy 과제
 <br/>
 20240319 recorder
 <br/>
+20240321 simple-nc
+<br/>
 20240321 bingo
 <br/>
 20240322 multi-chatting
+<br/>
+20240326 scurl
+<br/>
+20240327 simple-httpd
 <br/>
